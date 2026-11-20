@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "efmstir"
+version = "0.1.0"
+description = "Chaotic stirring in the blinking vortex and in a tidal flow over residual eddies, with finite-time and finite-size Lyapunov exponents, for the course 37EFM at TU/e"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Matias Duran Matute"}]
+dependencies = ["numpy", "matplotlib"]
+
+[project.optional-dependencies]
+notebook = ["jupyterlab"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["efmstir"]
